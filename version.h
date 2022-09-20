@@ -1,0 +1,13 @@
+#ifndef VERSION_H_
+#define VERSION_H_
+
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 4
+#define VERSION_BUILD 3
+
+#define _STR(x) #x
+#define STR(x) _STR(x)
+#define VERSION_STR STR(VERSION_MAJOR) "." STR(VERSION_MINOR) "." STR(VERSION_BUILD)
+#define VERSION_NUM VERSION_MAJOR, VERSION_MINOR, VERSION_BUILD
+
+#endif  // VERSION_H_
